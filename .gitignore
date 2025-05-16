@@ -1,24 +1,72 @@
-# build output
-dist/
-
-# generated types
-.astro/
-
 # dependencies
 node_modules/
-
-# logs
+.pnpm-debug.log*
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
 
-# environment variables
-.env
-.env.production
+# Astro build output
+dist/
+public/build/
+.cache/
+.astro/
 
-# macOS-specific files
+# logs
+*.log
+
+# OS crap
 .DS_Store
+Thumbs.db
 
-# jetbrains setting folder
+# VSC settings
+.vscode/
+*.code-workspace
+
+# Docker stuff
+*.env
+.env.*
+docker-compose.override.yml
+
+# local environments
+*.local
+*.local.*
+
+# MacOS/Linux swap
+*.swp
+*.swo
+
+# Windows dump
+*.lnk
+
+# Astro SSR
+ssr/
+
+# Ignore environment files (if present)
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Optional: Ignore static export
+out/
+export/
+
+# Optional: Ignore build coverage
+coverage/
+
+# npm cache
+.npm/
+
+# Optional: Ignore IDE folders
 .idea/
+*.iml
+
+# Optional: ignore test snapshots
+__snapshots__/
+
+# Optional: ignore custom backup files
+*~

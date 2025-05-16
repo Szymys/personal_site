@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  astro-site:
+    build: .
+    container_name: astro-site
+    ports:
+      - "8080:80"
+    restart: always
