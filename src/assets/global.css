@@ -37,7 +37,20 @@ html, body {
   animation: blink-caret 0.7s step-end infinite;
   margin-bottom: 8px;
 }
+#typewriter-sub {
+  font-size: 1.8em;   /* Większy niż standardowy subhead */
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1.5px;
+  min-height: 1.3em;
+  border-right: 0.1em solid #fff;
+  white-space: pre;
+  animation: blink-caret 0.7s step-end infinite;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
 @keyframes blink-caret { 50% { border-color: transparent; } }
+
 
 .subhead {
   color: #fff;
